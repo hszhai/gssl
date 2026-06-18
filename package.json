@@ -1,0 +1,34 @@
+{
+  "name": "gssl",
+  "version": "0.0.0",
+  "description": "GSSL — the Gaussian-Splat Shading Language: per-splat shaders that shape the primitive's footprint (covariance, flatness, kernel, stroke), not just pixel colour.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Sean Zhai",
+  "keywords": ["gaussian-splatting", "3dgs", "shading-language", "npr", "shaders", "splats"],
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test",
+    "prepublishOnly": "npm run clean && npm run build && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
