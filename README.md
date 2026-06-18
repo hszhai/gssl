@@ -24,10 +24,10 @@ procedural Brick (crisp faces, soft mortar), pen-and-ink Hatch (splats become
 oriented strokes). Bottom: Curvature hatch (strokes along the surface grain),
 Gooch ⊕ Rim, Toon ⊕ Rim. Rendered by `npm run gallery`.*
 
-> Status: **v0** — extracted from the `emerging-splats` renderer as a
-> standalone, renderer-agnostic core. The language, standard library and test
-> suite run in isolation here. A build/publish pipeline and an interactive
-> playground are the next milestones.
+> Status: **v0.1** — a standalone, renderer-agnostic core extracted from the
+> `emerging-splats` renderer. Language, standard library, test suite, build
+> pipeline and a golden-image gallery (below) all run here. An interactive web
+> playground is the next milestone.
 
 ## The model
 
