@@ -55,10 +55,16 @@ Gooch ⊕ Rim, Toon ⊕ Rim. Rendered by `npm run gallery`.*
 `curvatureHatch`, and the composed `goochRim` / `toonRim` — classic models
 re-expressed in GSSL, each reaching for a splat-native lane the original can't.
 
+## Install
+
+```
+npm install @hszhai/gssl
+```
+
 ## Example
 
 ```ts
-import { runShader, over, grazingMask, gooch, fresnelRim } from 'gssl';
+import { runShader, over, grazingMask, gooch, fresnelRim } from '@hszhai/gssl';
 
 // a cool-to-warm body that grows a ring-kernel halo at its silhouette
 const myShader = over(gooch, fresnelRim, grazingMask(0.5));

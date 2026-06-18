@@ -1,5 +1,5 @@
 {
-  "name": "gssl",
+  "name": "@hszhai/gssl",
   "version": "0.1.0",
   "description": "GSSL — the Gaussian-Splat Shading Language: per-splat shaders that shape the primitive's footprint (covariance, flatness, kernel, stroke), not just pixel colour.",
   "type": "module",
@@ -8,6 +8,7 @@
   "repository": { "type": "git", "url": "git+https://github.com/hszhai/gssl.git" },
   "homepage": "https://github.com/hszhai/gssl#readme",
   "bugs": { "url": "https://github.com/hszhai/gssl/issues" },
+  "publishConfig": { "access": "public" },
   "keywords": ["gaussian-splatting", "3dgs", "shading-language", "npr", "shaders", "splats"],
   "sideEffects": false,
   "main": "./dist/index.js",
