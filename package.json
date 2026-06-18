@@ -25,6 +25,7 @@
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "node --test",
+    "gallery": "node examples/gallery.ts",
     "prepublishOnly": "npm run clean && npm run build && npm test"
   },
   "devDependencies": {

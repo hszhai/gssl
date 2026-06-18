@@ -16,6 +16,14 @@ shader can turn the splat into a **crisp cel disk**, a **hollow ring-kernel rim
 halo**, or an **oriented brush stroke that follows the surface grain** — because
 it writes the splat's own falloff shape, falloff family, and covariance.
 
+![The GSSL shader gallery on a sphere](docs/gallery.png)
+
+*The stdlib gallery, each shader on the same sphere. Top: Gooch cool-to-warm,
+Toon (crisp cel disks), Fresnel rim (ring-kernel halo). Middle: Blinn-Phong,
+procedural Brick (crisp faces, soft mortar), pen-and-ink Hatch (splats become
+oriented strokes). Bottom: Curvature hatch (strokes along the surface grain),
+Gooch ⊕ Rim, Toon ⊕ Rim. Rendered by `npm run gallery`.*
+
 > Status: **v0** — extracted from the `emerging-splats` renderer as a
 > standalone, renderer-agnostic core. The language, standard library and test
 > suite run in isolation here. A build/publish pipeline and an interactive
@@ -70,9 +78,15 @@ input. `emerging-splats` is the reference adapter.
 ## Develop
 
 ```
-npm test         # node --test (type-stripped TS)
-npm run typecheck # tsc --noEmit
+npm test          # node --test (type-stripped TS)
+npm run typecheck  # tsc --noEmit
+npm run build      # emit dist/ (ESM + .d.ts)
+npm run gallery    # render the shader gallery (examples/) → out/ + docs/gallery.png
 ```
+
+`examples/` holds a self-contained software rasterizer used only to render the
+gallery — it is **not** part of the published package (the core is renderer-
+agnostic; the shade bus from `runShader` is the integration point).
 
 ## License
 
