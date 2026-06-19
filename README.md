@@ -1,5 +1,8 @@
 # GSSL — the Gaussian-Splat Shading Language
 
+**▶ Try it live: https://hszhai.github.io/gssl-playground/** &nbsp;·&nbsp;
+playground source: [hszhai/gssl-playground](https://github.com/hszhai/gssl-playground)
+
 A small language for shading **3D Gaussian splats**. A GSSL shader is one pure
 function from a splat's inputs to its full appearance — and unlike a screen-space
 pixel shader, it shapes the **primitive's footprint**, not just the colour at a

@@ -1,6 +1,6 @@
 {
   "name": "@hszhai/gssl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "GSSL — the Gaussian-Splat Shading Language: per-splat shaders that shape the primitive's footprint (covariance, flatness, kernel, stroke), not just pixel colour.",
   "type": "module",
   "license": "MIT",
